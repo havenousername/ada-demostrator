@@ -1,0 +1,82 @@
+-- MIDTERM-SAMPLE
+
+ 
+
+## For mark 2.
+Create a generic procedure `For_All`.
+
+`procedure For_All( V: in out Vector );`
+
+The procedure for each element of the `V` array executes an activity.
+The generic parameters are an array type and its own element and index type, and the activity procedure. The parameters should be general.
+
+In a demo by `For_All` instantiation we get a `Decode` operation which decodes a `String`.
+
+`procedure Decode( S: in out String );`
+
+The `Decode` procedure removes all consequently repeated characters and replaces it with the spaces in the end of the string. 
+Test Cases:
+`Hoookaaah` -> `Hokah    `
+`Hhoohah  ` -> `Hhohah   `
+`Hookahhhh` -> `Hokah    `
+
+## For mark 3.
+
+Create a generic package (`Vector`) for a vectors (which in its core will have same structure as Map), a generic package with two generic parameters: Index and Elem. 
+`Index` should be a subtype of character while `Element` should be a private type. 
+Vector record stores the letters of `Index` type representing the names of them in the dimensions (like 'x', 'y', 'z', etc.), and the `Elem` type numbers inside these dimentions.
+Vector record should have one discriminant parameter `Dimensions`, representing the length of the arrays.
+
+Implement the following operations:
+
+• `Insert_Dimension`: inserts new dimensional representation into the vector. Two parameters of Name, Value represent the 
+• `Dimensions`: returns vector dimentions (cardinality).
+• `Get`: gets as parameter a name of dimension ('x' f.e.) returns the dimensions value 
+• `Insert`: inserts all name,values into the vector
+• `+`: Adds one Vector to Another 
+• `-`: Substracts one Vector from Another
+
+Test the generic `Vector` by instanciating it to the Integer vector with names of The Character type.  
+Test it with the following sequence: 
+`
+Integer_Vector.Insert_Dimension(V1, 'x', 3);
+Integer_Vector.Insert_Dimension(V1, 'y', 5);
+Integer_Vector.Insert_Dimension(V1, 'z', 5);
+      
+Integer_Vector.Insert_Dimension(V2, 'x', -4);
+Integer_Vector.Insert_Dimension(V2, 'y', 10);
+Integer_Vector.Insert_Dimension(V2, 'z', 0);
+      
+V3 := Integer_Vector."+"(V1, V2);
+      -- -1
+Put_Line(Integer'Image(Integer_Vector.Get(V3, 'x').Getter));
+`
+
+## For mark 4.
+Create a generic function called `Length` which finds the `Vector`'s `Elem` type length.
+`Length` generic has two arguments passed: `Sqrt` which is required by default, and "*" which can be infered for Primitive Types 
+Formula: sqrt_2(a_1 * a_1  + a_2 * a_2 + .. + a_n * a_n)
+Hint!: For sqrt function use: `Ada.Numerics.Elementary_Functions.Sqrt(Float(I))`
+
+Also create `Print` procedure to print Vector containment. Format:
+`( x = 4, y = 5, z = 10 )` 
+
+## For mark 5.
+
+Using `For_All` generic implement in the main program some operations regards vectors.
+These operations will be `Length_For_All`.
+This will require you to create new array type of vectors: `IntegerVectorArray` with an index type:
+`type Index is new Positive range 1..Ada.Command_Line.Argument_Count`. Using this type create an array of bags, fill it with the strings sent from command line,  and 
+the implementation of the procedures specified above. Test the implemetation with following input:
+`5 7 9 _ 8 23 5 _ 9 4 12`
+
+Hint: use `Ada.Command_Line` package.
+
+Result:
+
+( 'x' =  5, 'y' =  7, 'z' =  9) 
+( 'x' =  8, 'y' =  23, 'z' =  5) 
+( 'x' =  9, 'y' =  4, 'z' =  1) 
+All length is  4.72090E+01
+
+ 

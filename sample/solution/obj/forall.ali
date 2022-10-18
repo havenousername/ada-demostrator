@@ -1,0 +1,29 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U forall%b		forall.adb		991dbeb3 NE OO PK IL
+
+U forall%s		forall.ads		9bfde219 BN EE NE OO PK IL
+
+D forall.ads		20221015123858 9bfde219 forall%s
+D forall.adb		20221015123858 02e05caa forall%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+X 1 forall.ads
+1K9*forall 8l5 8e11 2|1b14 8l5 8t11
+3E14 Index 5r30
+4+14 Elem 5r40 6r43
+5A14 Vector(4+14)<3E14> 7r34 2|2r36
+6U24 Action 6=32 2|5s13
+6*32 el{4+14}
+7u15*For_All 7=24 2|2b15 7l9 7t16
+7*24 V{5A14} 2|2b25 4r18 5m21 5r21
+X 2 forall.adb
+4e13 i 5r23
+

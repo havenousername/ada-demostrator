@@ -1,0 +1,175 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U main%b		main.adb		b8e00580 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W forall%s		forall.adb		forall.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_char%s	s-imgcha.adb		s-imgcha.ali
+Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+W vectors%s		vectors.adb		vectors.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-comlin.ads		20210520051128 4aa66568 ada.command_line%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20210520051130 84bea7a3 ada.numerics%s
+D a-nuelfu.ads		20210520051130 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20210520051130 e6ec3af5 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D forall.ads		20221015123858 9bfde219 forall%s
+D forall.adb		20221015123858 02e05caa forall%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D main.adb		20221018033740 399ba6bb main%b
+D system.ads		20210520051136 2ffa5114 system%s
+D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
+D s-conca4.ads		20210520051132 7e642b20 system.concat_4%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imager.ads		20210520051134 500b11a9 system.image_r%s
+D s-imageu.ads		20210520051134 525c30c6 system.image_u%s
+D s-imgcha.ads		20210520051134 9c3458e7 system.img_char%s
+D s-imgflt.ads		20210520051134 78689de8 system.img_flt%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-imguns.ads		20210520051134 0e4da2ac system.img_uns%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-powflt.ads		20210520051134 46f7a1b9 system.powten_flt%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-valint.ads		20210520051134 e7fcadb7 system.val_int%s
+D s-valuns.ads		20210520051134 dac7b45d system.val_uns%s
+D s-valuei.ads		20210520051134 978dd0a6 system.value_i%s
+D s-valueu.ads		20210520051134 7b8fccf5 system.value_u%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+D vectors.ads		20221018032356 0b77459f vectors%s
+D vectors.adb		20221018032452 1b8ad8d2 vectors%b
+G a e
+G c Z b b [main standard 8 11 none]
+G r i none [main standard 8 11 none] [for_all forall 7 15 none]
+G r i none [main standard 8 11 none] [vectors standard 6 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 21|1r6 2r6 3r7 3r42 4r5 4r18 67r14 136r22 137r27 141r52
+X 2 a-comlin.ads
+36K13*Command_Line 144e21 21|3w46 136r26 137r31 141r56
+39V13*Argument_Count{natural} 21|136s39
+52V13*Argument{string} 21|137s44 141s69
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[15|46] 21|2w10 4r22
+X 6 a-numeri.ads
+16K13*Numerics 35e17 21|3r11 67r18
+X 7 a-nuelfu.ads
+18K22*Elementary_Functions[8|39] 21|3w20 67r27
+X 8 a-ngelfu.ads
+52V13*Sqrt{float} 21|67s48[7|18]
+X 14 a-textio.ads
+58K13*Text_IO 725e16 21|1w10 4r9
+262U14*New_Line 21|112s7
+506U14*Put_Line 21|43s11 109s7 113s7 126s7 129s7 161s7
+X 17 forall.ads
+1K9*forall 8e11 21|2w27 4r39
+7u15*For_All 21|47r36 101r32
+X 21 main.adb
+8U11*Main 8b11 164l5 164t9
+9U14 Decode 9b14 9=23 33l8 33t14 47r70
+9a23 S{string} 10r27 11r29 12r23 12r32 15r29 16r31 21r39 21r57 21r69 32m7
+10i7 Iter_S{positive} 15r20 16r33 21r19 21r59 21r71 25m13 25r23
+11i7 Iter_Tmp{positive} 16r18 28m10 28r36
+12a7 Tmp_Str{string} 16m10 32r12
+19i13 Additor{positive} 21r28 21r80 22m16 22r41 25r32
+35I9 Index<short_short_integer> 37r27 47r44
+36A12 Element{string}<integer> 37r37 47r51
+37A9 MyVector(36A12)<35I9> 40r35 47r60 52r8
+40U14 print_vector 40b14 40>28 45l8 45t20 110s7 114s7
+40a28 V{37A9} 42r17 43r20
+42i12 i<short_short_integer> 43r22
+47U14 Decode_For_All[17|7] 18|2b15 21|111s7
+49a4 test1{string} 104r15
+50a4 test2{string} 105r15
+51a4 test3{string} 106r15
+52a4 V{37A9} 104m7 105m7 106m7 110r20 111m22 111r22 114r20
+55i4 MARK{positive} 103r7
+58K12 Integer_Vector[52|6] 59r8 60r8 61r8 70r42 72r42 76r48 94r39 101r45
+. 116r7 117r7 118r7 120r7 121r7 122r7 124r13 126r30 138r16
+59r4 V1{52|8R9[58]} 116m39 116r39 117m39 117r39 118m39 118r39 124r32 129r50
+60r4 V2{52|8R9[58]} 120m39 120r39 121m39 121r39 122m39 122r39 124r36
+61r4 V3{52|8R9[58]} 124m7 126r49
+64V13 Sqrt_Integer{float} 64b13 64>26 68l8 68t20 70r71
+64i26 I{integer} 67r59
+70V13 Integer_Vector_Length[52|39]{float} 96s30 129s28
+72U14 Print_Integer_Vector[52|43] 156s11
+75I9 Ind<integer> 76r40 78r19 101r40
+76A9 Integer_Vector_Array(52|8R9[58])<75I9> 77r11 101r68
+77a4 V_Arr{76A9} 139m38 139r38 155r16 156r32 159m18 159r18
+78i4 V_Arr_Counter{75I9} 139r44 149m16 149r33
+80V13 Is_Integer{boolean} 80b13 80>24 88l8 88t18 137s16
+80a24 N{string} 83r28
+81i7 Num{integer} 83m7
+89I9 Range_XYZ<short_short_integer> 90r28 134r21 134r34
+90A9 XYZArray(character)<89I9> 133r15 146r32
+93f4 V_Length{float} 96m7 96r19 161r47
+94U14 Length_Wrapper 94b14 94=29 97l8 97t22 101r90
+94r29 V{52|8R9[58]} 96r52
+101U14 All_Length[17|7] 18|2b15 21|159s7
+133a10 XYZ{90A9} 140r38
+134i10 XYZ_Index{89I9} 140r42 143r19 144m19 144r32 146m19
+136i14 I{integer} 137r53 141r78
+155i11 I<integer> 156r38
+X 52 vectors.ads
+6k9*Vectors 21|2w35 58r34 52|53e12
+8R9 Vector 21|59r23[58] 60r23[58] 61r23[58] 76r63[58] 94r54[58] 101r60[58]
+10R9 Get_Return
+12i7 Getter{integer} 21|126r58[58]
+16U14 Insert_Dimension 21|116s22[58] 117s22[58] 118s22[58] 120s22[58] 121s22[58]
+. 122s22[58] 138s31[58]
+19V13 Get{10R9[21|58]} 21|126s45[58]
+24V14 "+"{8R9[21|58]} 21|124s29[58]
+39v13 Length 21|70r57[58]
+43u14 Print 21|72r57[58]
+

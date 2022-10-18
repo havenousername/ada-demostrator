@@ -1,0 +1,144 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U vectors%b		vectors.adb		be094820 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U vectors%s		vectors.ads		0b77459f BN EE NE OO PK GE
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+D vectors.ads		20221018032356 0b77459f vectors%s
+D vectors.adb		20221018032452 1b8ad8d2 vectors%b
+G a e
+G c Z s b [vectors standard 6 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 30|1r6 2r5
+X 9 a-textio.ads
+58K13*Text_IO 725e16 30|1w10 2r9
+262U14*New_Line 30|132s7
+463U14*Put 30|123s7 125s10 129s10 131s7
+X 29 vectors.ads
+2E9 Index<character> 16r55 19r37 29r50 45r52 30|5r55 21r37 35r52 125r19
+3+9 Elem 4r30 4r43 5r30 5r43 12r15 16r69 30r50 37r30 38r33 38r46 42r39 46r53
+. 30|5r69 113r9
+4V19 "+"{3+9} 4>22 4>26 30|78s60 116s17
+4*22 E1{3+9}
+4*26 E2{3+9}
+5V19 "-"{3+9} 5>22 5>26 30|92s60
+5*22 E1{3+9}
+5*26 E2{3+9}
+6k9*Vectors 2z9 3z9 4z19 5z19 45E9 53l5 53e12 30|4b14 135l5 135t12
+7I12*Dimension{positive} 8r19 8r32 17r42 48r19 48r32 49r25 50r27 30|16r45
+. 51r36 61r23 62r36
+8R9*Vector 8d16 16r41 17r27 19r23 20r29 21r28 24r25 24r40 25r25 25r40 31r31
+. 39r26 43r24 48c9 52e14 30|5r41 16r30 21r23 35r38 47r29 58r28 71r28 71r43
+. 72r11 86r28 86r43 87r11 100r31 112r26 121r24
+8i16 D{7I12} 48r16 49r42 50r44 30|7r24 18r16
+10R9*Get_Return 13e14 19r51 20r44 21r43 30|21r51 22r15 47r44 48r15 58r43
+. 59r15
+11b7 Exists{boolean} 30|27m20 52m17 63m17
+12*7 Getter{3+9} 30|26m20 51m17 62m17 113r30 113r52
+16U14*Insert_Dimension 16=31 16>49 16>62 30|5b14 14l8 14t24 78s13 92s13 107s9
+16r31 V{8R9} 30|5b31 7r10 7r22 11m7 11r33 12m7 12r15 13m7 13r16
+16*49 Name{2E9} 30|5b49 12r29
+16*62 Value{3+9} 30|5b62 13r30
+17V13*Dimensions{7I12} 17>24 30|16b13 19l8 19t18
+17r24 V{8R9} 30|16b24 18r14
+19V13*Get{10R9} 19>17 19>31 30|21b13 33l8 33t11
+19r17 V{8R9} 30|21b17 24r32 25r13 26r30
+19*31 Name{2E9} 30|21b31 25r26
+20V13*Get_First{10R9} 20>23 30|47b13 56l8 56t17 113s17 113s39
+20r23 V{8R9} 30|47b23 50r10 51r27
+21V13*Get_Last{10R9} 21>22 30|58b13 67l8 67t16
+21r22 V{8R9} 30|58b22 61r10 62r27
+24V14*"+"{8R9} 24>17 24>21 30|71b14 83l9 83t11
+24r17 V1{8R9} 30|71b17 72r21 73r24
+24r21 V2{8R9} 30|71b21 77r32 78r62
+25V14*"-"{8R9} 25>17 25>21 30|86b14 97l9 97t11
+25r17 V1{8R9} 30|86b17 87r21 88r24
+25r21 V2{8R9} 30|86b21 91r32 92r62
+28E12 Ind 29r33 30r33
+29A12 IndexArray(2E9)<28E12> 31r43 30|100r43
+30A12 ValueArray(3+9)<28E12> 31r59 30|100r59
+31u14*Insert 31=21 31>39 31>55 30|100b14 109l8 109t14
+31r21 V{8R9} 30|100b21 107m26
+31*39 IA{29A12} 30|100b39 102r10 106r16 107r29
+31*55 VA{30A12} 30|100b55 102r23 107r36
+36+12 Return_Type 37r43 39r41 30|112r41
+37V21 Sqrt{36+12} 37>26 30|118s14
+37*26 E1{3+9}
+38V22 "*"{3+9} 38>25 38>29 30|113s37 116s33
+38*25 E1{3+9}
+38*29 E2{3+9}
+39v13*Length 39>20 30|112b13 119l8 119t14
+39r20 V{8R9} 30|112b20 113r27 113r49 115r47 116r21 116r35
+42V21 Elem_To_String{string} 42>36 30|125s55
+42*36 E{3+9}
+43u14*Print 43>20 30|121b14 133l8 133t13
+43r20 V1{8R9} 30|121b20 124r19 125r32 125r71 126r17
+45A9 TNameArray(2E9)<integer> 49r14
+46A9 TValueArray(3+9)<integer> 50r15
+49a7 Names{45A9} 30|12m9 25r15 38r15 77r39 78r37 91r39 92r37 125r35
+50a7 Values{46A9} 30|13m9 26r32 51r29 62r29 78r50 78r65 92r50 92r65 116r23
+. 116r37 125r74
+51i7 Pointer{natural} 30|7r12 11m9 11r35 12r17 13r18 24r34 37r35 50r12 61r12
+. 73r27 75m10 88r27 115r49 124r22 126r20
+X 30 vectors.adb
+22r7 Getter{29|10R9} 26m13 27m13 32r14
+24i11 I{integer} 25r21 26r39
+35V13 Has_Dimension_Name{boolean} 35b13 35>32 35>46 44l8 44t26 77s13 91s13
+35r32 V{29|8R9} 37r33 38r13
+35*46 Name{29|2E9} 38r26
+37i12 I{integer} 38r21
+48r7 Getter{29|10R9} 51m10 52m10 55r14
+59r7 Getter{29|10R9} 62m10 63m10 66r14
+72r7 V3{29|8R9} 75m7 77r36 78m30 78r30 78r34 78r47 82r14
+73i7 Last{natural} 76r32
+76i11 I{integer} 77r45 78r43 78r57 78r72
+87r7 V3{29|8R9} 91r36 92m30 92r30 92r34 92r47 96r14
+88i7 Last{natural} 90r32
+90i11 I{integer} 91r45 92r43 92r57 92r72
+106e11 i 107r32 107r39
+113*6 E{29|3+9} 116m10 116r15 118r19
+115i11 I{integer} 116r30 116r44
+124i11 I{integer} 125r41 125r81 126r13
+
